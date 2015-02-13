@@ -1,0 +1,7 @@
+.*.swp
+.vagrant
+.bundle/
+.librarian/
+.tmp/
+bin/
+modules

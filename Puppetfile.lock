@@ -1,0 +1,41 @@
+FORGE
+  remote: https://forgeapi.puppetlabs.com
+  specs:
+    example42-puppi (2.1.10)
+    example42-yum (2.1.17)
+      example42-puppi (> 2.0.0)
+    puppetlabs-apache (1.2.0)
+      puppetlabs-concat (>= 1.1.1)
+      puppetlabs-stdlib (>= 2.4.0)
+    puppetlabs-apt (1.7.0)
+      puppetlabs-stdlib (>= 2.2.1)
+    puppetlabs-concat (1.1.2)
+      puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
+    puppetlabs-mongodb (0.10.0)
+      puppetlabs-apt (< 2.0.0, >= 1.0.0)
+      puppetlabs-stdlib (< 5.0.0, >= 2.2.0)
+    puppetlabs-stdlib (4.5.1)
+
+GIT
+  remote: https://github.com/dprince/puppet-qpid
+  ref: master
+  sha: 9ffb2788c536f1694980e07a43e8133ff85fa28c
+  specs:
+    dprince-qpid (1.0.2)
+      puppetlabs-stdlib (>= 0.0.1)
+
+GIT
+  remote: https://github.com/pulp/puppet_deployment
+  ref: master
+  sha: b7e1b0af9b1b5acd42f8130686bc5981ead5689a
+  specs:
+    pulp (1.0.0)
+      puppetlabs-stdlib (>= 4.3.1)
+
+DEPENDENCIES
+  dprince-qpid (>= 0)
+  example42-yum (>= 0)
+  pulp (>= 0)
+  puppetlabs-apache (>= 0)
+  puppetlabs-mongodb (>= 0)
+
